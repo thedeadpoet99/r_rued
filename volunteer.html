@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Work & Achievements - Rahnuma Rued</title>
+    <meta name="description" content="Volunteer work, community involvement, and leadership achievements of Rahnuma Rued">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #8b5cf6;
+            --accent-color: #06b6d4;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --text-light: #94a3b8;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-card: rgba(255, 255, 255, 0.9);
+            --border-color: #e2e8f0;
+            --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #06b6d4 100%);
+            --gradient-heart: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
+            --gradient-success: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            --gradient-warning: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+
+        [data-theme="dark"] {
+            --text-primary: #f1f5f9;
+            --text-secondary: #cbd5e1;
+            --text-light: #94a3b8;
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-card: rgba(30, 41, 59, 0.9);
+            --border-color: #334155;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation - Same as other pages */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        [data-theme="dark"] .navbar {
+            background: rgba(15, 23, 42, 0.95);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links li a:hover,
+        .nav-links li a.active {
+            color: var(--primary-color);
+            background: rgba(99, 102, 241, 0.1);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            background: var(--gradient-primary);
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+        }
+
+        [data-theme="dark"] .mobile-nav {
+            background: rgba(15, 23, 42, 0.98);
+        }
+
+        .mobile-nav.active {
+            display: block;
+        }
+
+        .mobile-nav-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .mobile-nav-links li a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 500;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        .mobile-nav-links li a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Page Header */
+        .page-header {
+            padding-top: 120px;
+            padding-bottom: 60px;
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-heart);
+            opacity: 0.05;
+        }
+
+        .floating-hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+        }
+
+        .heart {
+            position: absolute;
+            color: var(--success-color);
+            opacity: 0.1;
+            animation: floatHeart 15s infinite linear;
+            font-size: 2rem;
+        }
+
+        .heart:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .heart:nth-child(2) { left: 30%; animation-delay: -3s; }
+        .heart:nth-child(3) { left: 50%; animation-delay: -6s; }
+        .heart:nth-child(4) { left: 70%; animation-delay: -9s; }
+        .heart:nth-child(5) { left: 90%; animation-delay: -12s; }
+
+        @keyframes floatHeart {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.1;
+            }
+            90% {
+                opacity: 0.1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .page-header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .page-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: var(--gradient-heart);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.3s forwards;
+        }
+
+        .page-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.5s forwards;
+        }
+
+        .impact-summary {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.7s forwards;
+        }
+
+        .impact-item {
+            text-align: center;
+        }
+
+        .impact-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--success-color);
+            display: block;
+        }
+
+        .impact-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Main Content */
+        .volunteer-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Leadership Spotlight */
+        .leadership-spotlight {
+            margin-bottom: 5rem;
+        }
+
+        .spotlight-card {
+            background: var(--gradient-primary);
+            border-radius: 30px;
+            padding: 0;
+            overflow: hidden;
+            color: white;
+            position: relative;
+        }
+        /* Lightbox Modal */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(5px);
+        }
+
+        .lightbox-content {
+            position: relative;
+            margin: 5% auto;
+            max-width: 90%;
+            max-height: 90%;
+            text-align: center;
+        }
+
+        .lightbox-image {
+            max-width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .lightbox-caption {
+            color: white;
+            padding: 20px;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .spotlight-header {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .spotlight-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .spotlight-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .spotlight-org {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        .spotlight-content {
+            padding: 3rem;
+        }
+
+        .spotlight-description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: center;
+            margin-bottom: 3rem;
+            opacity: 0.95;
+        }
+
+        .spotlight-achievements {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .spotlight-achievement {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .spotlight-achievement:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .achievement-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+        }
+
+        .achievement-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .achievement-desc {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        /* Photo Album Section */
+        .photo-album {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .album-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .photo-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px dashed rgba(255, 255, 255, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .photo-item:hover {
+            border-color: rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.15);
+            transform: scale(1.02);
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .photo-placeholder {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .photo-placeholder i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .photo-placeholder span {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Volunteer Activities Grid */
+        .activities-section {
+            margin-bottom: 5rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            opacity: 0;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            opacity: 0;
+        }
+
+        .activities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .activity-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 25px;
+            padding: 0;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            position: relative;
+            opacity: 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .activity-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .activity-header {
+            padding: 2rem 2rem 1rem;
+            position: relative;
+        }
+
+        .activity-type {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .type-leadership {
+            background: var(--gradient-primary);
+            color: white;
+        }
+
+        .type-representation {
+            background: var(--gradient-success);
+            color: white;
+        }
+
+        .type-achievement {
+            background: var(--gradient-warning);
+            color: white;
+        }
+
+        .activity-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .icon-leadership {
+            background: var(--gradient-primary);
+        }
+
+        .icon-representation {
+            background: var(--gradient-success);
+        }
+
+        .icon-achievement {
+            background: var(--gradient-warning);
+        }
+
+        .activity-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .activity-organization {
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .activity-period {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .activity-content {
+            padding: 0 2rem 2rem;
+        }
+
+        .activity-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .activity-highlights {
+            list-style: none;
+        }
+
+        .activity-highlights li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .activity-highlights li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--success-color);
+            font-weight: bold;
+        }
+
+        /* Activity Photo Gallery */
+        .activity-photos {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .photos-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .activity-photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+        }
+
+        .activity-photo-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            background: var(--bg-secondary);
+            border: 2px dashed var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .activity-photo-item:hover {
+            border-color: var(--primary-color);
+            background: rgba(99, 102, 241, 0.05);
+            transform: scale(1.02);
+        }
+
+        .activity-photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .activity-photo-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .activity-photo-placeholder {
+            text-align: center;
+            color: var(--text-light);
+            padding: 1rem;
+        }
+
+        .activity-photo-placeholder i {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .activity-photo-placeholder span {
+            font-size: 0.8rem;
+            line-height: 1.3;
+        }
+
+        /* Recognition & Values */
+        .recognition-section {
+            background: var(--bg-secondary);
+            padding: 4rem 0;
+            border-radius: 30px;
+            margin: 4rem 0;
+        }
+
+        .recognition-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .recognition-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            opacity: 0;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .value-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2.5rem 1.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+        }
+
+        .value-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-heart);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .value-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-heart);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            margin: 0 auto 1.5rem;
+        }
+
+        .value-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .value-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .animate-on-scroll.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links,
+            .nav-actions .cta-button {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .impact-summary {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .spotlight-title {
+                font-size: 2rem;
+            }
+
+            .spotlight-content {
+                padding: 2rem;
+            }
+
+            .spotlight-achievements {
+                grid-template-columns: 1fr;
+            }
+
+            .activities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .photo-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">RR</a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="volunteer.html" class="active">Volunteer</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#" class="cta-button">Download CV</a>
+            </div>
+            
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-nav" id="mobile-nav">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="floating-hearts">
+            <i class="fas fa-heart heart"></i>
+            <i class="fas fa-heart heart"></i>
+            <i class="fas fa-heart heart"></i>
+            <i class="fas fa-heart heart"></i>
+            <i class="fas fa-heart heart"></i>
+        </div>
+        
+        <div class="page-header-content">
+            <h1 class="page-title">Volunteer Work & Achievements</h1>
+            <p class="page-subtitle">Making a difference through leadership, community service, and global engagement</p>
+            
+            <div class="impact-summary">
+                <div class="impact-item">
+                    <span class="impact-number">5</span>
+                    <span class="impact-label">Leadership Roles</span>
+                </div>
+                <div class="impact-item">
+                    <span class="impact-number">5</span>
+                    <span class="impact-label">Organizations</span>
+                </div>
+                <div class="impact-item">
+                    <span class="impact-number">1000+</span>
+                    <span class="impact-label">Lives Impacted</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- These stay empty - JavaScript fills them automatically -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close">&times;</button>
+            <img class="lightbox-image" id="lightbox-image" src="" alt="">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <section class="volunteer-section">
+        <!-- Leadership Spotlight -->
+        <div class="leadership-spotlight animate-on-scroll">
+            <div class="spotlight-card">
+                <div class="spotlight-header">
+                    <div class="spotlight-badge">
+                        <i class="fas fa-crown"></i>
+                        2024-2025
+                    </div>
+                    <h2 class="spotlight-title">BUEDF President</h2>
+                    <div class="spotlight-org">BRAC University Entrepreneurship Development Forum</div>
+                </div>
+                
+                <div class="spotlight-content">
+                    <p class="spotlight-description">
+                        Leading Bangladesh's premier university entrepreneurship forum, driving innovation, organizing major events, and fostering the next generation of entrepreneurs through strategic partnerships and community engagement.
+                    </p>
+                    
+                    <div class="spotlight-achievements">
+                        <div class="spotlight-achievement">
+                            <div class="achievement-icon">
+                                <i class="fas fa-calendar-star"></i>
+                            </div>
+                            <div class="achievement-title">Winter Fest 2024</div>
+                            <div class="achievement-desc">Organized flagship entrepreneurship festival with 500+ participants and industry leaders</div>
+                        </div>
+                        
+                        <div class="spotlight-achievement">
+                            <div class="achievement-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="achievement-title">Career Fair 2024</div>
+                            <div class="achievement-desc">Hosted BRAC University's largest career fair connecting students with top employers</div>
+                        </div>
+                        
+                        <div class="spotlight-achievement">
+                            <div class="achievement-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="achievement-title">16th Convocation</div>
+                            <div class="achievement-desc">Served as Management Volunteer for university's graduation ceremony</div>
+                        </div>
+                    </div>
+
+                    <!-- Photo Album -->
+                    <div class="photo-album">
+                        <h3 class="album-title">
+                            <i class="fas fa-images"></i>
+                            BUEDF Leadership Moments
+                        </h3>
+                        <div class="activity-photo-grid">
+                            <div class = "photo-item">
+                                <img src="New folder\presidentpost.jpg" alt="Presidential Panel Post" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="New folder\winterfest.jpg" alt="Winter Fest 2024 Opening Ceremony" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="New folder\convo.jpg" alt="BUEDF in Convocation Ceremony" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="New folder\talk.jpg" alt="entrepreneur talk" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="New folder\Eidbazar.jpg" alt="Eid Bazar" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="New folder\clubfair.jpg" alt="Club Fair" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="New folder\ced_partnership.jpg" alt="CED partnership" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="New folder\mou.jpg" alt="MOU signing BYLC" loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="New folder\fes3.jpg" alt="Entrepreneurship Fair 3.0 " loading="lazy">
+                            </div>
+                            <div class="photo-item">
+                                <img src="New folder\career_fair.jpg" alt="Career Fair 2024" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activities Section -->
+        <div class="activities-section">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Community Engagement & Global Impact</h2>
+                <p class="section-subtitle">From local leadership to international representation</p>
+            </div>
+            
+            <div class="activities-grid">
+                <!-- EU Youth Dialogue -->
+                <div class="activity-card animate-on-scroll">
+                    <div class="activity-header">
+                        <div class="activity-type type-representation">International</div>
+                        <div class="activity-icon icon-representation">
+                            <i class="fas fa-globe-europe"></i>
+                        </div>
+                        <h3 class="activity-title">Youth Representative</h3>
+                        <div class="activity-organization">EU-Bangladesh Youth Roundtable Dialogue</div>
+                        <div class="activity-period">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>April 2025</span>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-content">
+                        <p class="activity-description">
+                            Represented Bangladeshi youth in high-level diplomatic dialogue with European Union officials, discussing critical regional and global issues.
+                        </p>
+                        
+                        <ul class="activity-highlights">
+                            <li>Engaged with H.E. Michael Miller and EU officials</li>
+                            <li>Discussed education, climate action, and economic cooperation</li>
+                            <li>Provided youth perspectives on skills development and green innovation</li>
+                            <li>Contributed to strengthening EU-Bangladesh partnerships</li>
+                        </ul>
+
+                        <div class="activity-photos">
+                            <div class="photos-title">
+                                <i class="fas fa-camera"></i>
+                                Event Gallery
+                            </div>
+                            <div class="activity-photo-grid">
+                                <div class ="photo-item">
+                                    <img src="New folder\round1.jpeg" alt="EU Youth Dialogue Session" loading="lazy">
+                                </div>
+                                <div class ="photo-item">
+                                    <img src="New folder\round2.jpeg" alt="Group Photo with EU Delegates" loading="lazy">
+                                </div>
+                                <div class ="photo-item">
+                                    <img src="New folder\round3.jpeg" alt="Youth Discussion Panel" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BRAC Global Discussion -->
+                <div class="activity-card animate-on-scroll">
+                    <div class="activity-header">
+                        <div class="activity-type type-representation">Strategic</div>
+                        <div class="activity-icon icon-representation">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="activity-title">Student Representative</h3>
+                        <div class="activity-organization">BRAC Global Discussion at BRAC University</div>
+                        <div class="activity-period">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>December 2024</span>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-content">
+                        <p class="activity-description">
+                            Participated in strategic discussions with BRAC International Holdings board members on institutional development and student opportunities.
+                        </p>
+                        
+                        <ul class="activity-highlights">
+                            <li>Engaged with BRAC International Holdings B.V. (BIHBV) board members</li>
+                            <li>Discussed student opportunities and institutional improvements</li>
+                            <li>Showcased student achievements and strategic vision</li>
+                            <li>Fostered collaboration between students and management</li>
+                        </ul>
+
+                        <div class="activity-photos">
+                            <div class="photos-title">
+                                <i class="fas fa-camera"></i>
+                                Event Gallery
+                            </div>
+                            <div class="activity-photo-grid">
+                                <div class ="photo-item">
+                                    <img src="New folder\global1.jpeg" alt="BRAC Global Discussion Session" loading="lazy">
+                                </div>
+                                <div class ="photo-item">
+                                    <img src="New folder\global2.jpeg" alt="Discussion with BRAC Board Members" loading="lazy">
+                                </div>
+                                <div class ="photo-item">
+                                    <img src="New folder\global3.jpeg" alt="Student Representation at BRAC Event" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ILO & UN Women -->
+                <div class="activity-card animate-on-scroll">
+                    <div class="activity-header">
+                        <div class="activity-type type-representation">UN Panel</div>
+                        <div class="activity-icon icon-representation">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <h3 class="activity-title">Youth Panelist</h3>
+                        <div class="activity-organization">ILO & UN Women Youth Consultation</div>
+                        <div class="activity-period">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>October 2024</span>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-content">
+                        <p class="activity-description">
+                            Contributed to international policy dialogue on women's empowerment and employment with UN agencies and global experts.
+                        </p>
+                        
+                        <ul class="activity-highlights">
+                            <li>Discussed challenges for young women in employment</li>
+                            <li>Focused on empowerment and workforce inclusion strategies</li>
+                            <li>Collaborated with international development experts</li>
+                            <li>Contributed to policy recommendations for women's advancement</li>
+                        </ul>
+
+                        <div class="activity-photos">
+                            <div class="photos-title">
+                                <i class="fas fa-camera"></i>
+                                Event Gallery
+                            </div>
+                            <div class= "activity-photo-grid">
+                                <div class ="activity-photo-item">
+                                    <img src="New folder\youth1.jpeg" alt="ILO Panel Discussion" loading="lazy">
+                                </div>
+                                <div class ="activity-photo-item">
+                                    <img src="New folder\youth2.jpeg" alt= "ILO Panel Discussion" loading="lazy">
+                                </div>
+                                <div class ="activity-photo-item">
+                                    <img src="New folder\youth3.jpeg" alt="Youth Panel Session" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HULT Prize Leadership -->
+                <div class="activity-card animate-on-scroll">
+                    <div class="activity-header">
+                        <div class="activity-type type-leadership">Multi-Year</div>
+                        <div class="activity-icon icon-leadership">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="activity-title">HULT Prize Leadership</h3>
+                        <div class="activity-organization">HULT Prize at BRAC University</div>
+                        <div class="activity-period">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>2021-2024 (Multi-year)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-content">
+                        <p class="activity-description">
+                            Progressed through multiple leadership roles in the world's largest student competition for social good, culminating in departmental recognition.
+                        </p>
+                        
+                        <ul class="activity-highlights">
+                            <li>Head of Team Management (2023-24) - Led operational excellence</li>
+                            <li>Volunteer (2022-23) - Supported event coordination</li>
+                            <li>Semi-Finalist in On Campus Round (2021-22)</li>
+                            <li>Awarded Best Department for multiple categories</li>
+                            <li>Served as liaison between judges and participants</li>
+                        </ul>
+
+                        <div class="activity-photos">
+                            <div class="photos-title">
+                                <i class="fas fa-camera"></i>
+                                Event Gallery
+                            </div>
+                            <div class="activity-photo-grid">
+                                <div class ="activity-photo-item">
+                                    <img src="New folder\hult1.jpeg" alt="HULT Prize Team Management" loading="lazy">
+                                </div>
+                                <div class ="activity-photo-item">
+                                    <img src="New folder\hult2.jpeg" alt="HULT Prize Volunteer Event" loading="lazy">
+                                </div>
+                                <div class ="activity-photo-item">
+                                    <img src="New folder\hult3.jpeg" alt="HULT Prize Semi-Finalist Presentation" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recognition & Values -->
+    <section class="recognition-section">
+        <div class="recognition-container">
+            <h2 class="recognition-title animate-on-scroll">Core Values & Impact</h2>
+            
+            <div class="values-grid">
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="value-title">Leadership Excellence</h3>
+                    <p class="value-description">
+                        Demonstrated exceptional leadership capabilities across diverse roles, from university-level initiatives to international diplomatic engagements.
+                    </p>
+                </div>
+                
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="value-title">Community Service</h3>
+                    <p class="value-description">
+                        Dedicated to serving communities through volunteer work, focusing on youth development, education, and social empowerment initiatives.
+                    </p>
+                </div>
+                
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="value-title">Global Engagement</h3>
+                    <p class="value-description">
+                        Actively engaged in international dialogues and collaborations, bringing global perspectives to local initiatives and representing Bangladesh globally.
+                    </p>
+                </div>
+                
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="value-title">Innovation Champion</h3>
+                    <p class="value-description">
+                        Passionate advocate for innovation and entrepreneurship, creating platforms for creative collaboration and supporting emerging entrepreneurs.
+                    </p>
+                </div>
+                
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="value-title">Social Justice</h3>
+                    <p class="value-description">
+                        Committed to promoting equality and social justice, particularly focusing on women's empowerment and youth development opportunities.
+                    </p>
+                </div>
+                
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="value-title">Collaborative Spirit</h3>
+                    <p class="value-description">
+                        Strong believer in the power of collaboration, building bridges between different organizations, cultures, and communities for mutual benefit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = themeToggle.querySelector('i');
+        
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+        
+        function updateThemeIcon(theme) {
+            themeIcon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+        }
+
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        const mobileMenuIcon = mobileMenuToggle.querySelector('i');
+        
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            mobileMenuIcon.className = mobileNav.classList.contains('active') 
+                ? 'fas fa-times' 
+                : 'fas fa-bars';
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Activity cards stagger animation
+        const activityCards = document.querySelectorAll('.activity-card');
+        
+        const cardObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'all 0.8s ease';
+                    }, index * 150);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        activityCards.forEach(card => {
+            cardObserver.observe(card);
+        });
+
+        // Counter animation for impact numbers
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            
+            const counter = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    element.textContent = target + (element.textContent.includes('+') ? '+' : '');
+                    clearInterval(counter);
+                } else {
+                    element.textContent = Math.floor(start) + (element.textContent.includes('+') ? '+' : '');
+                }
+            }, 16);
+        }
+        // Lightbox functionality
+        function initLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+            const closeBtn = document.querySelector('.lightbox-close');
+            
+            // Add click listeners to all images
+            document.querySelectorAll('.photo-item img, .activity-photo-item img').forEach(img => {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function() {
+                    lightbox.style.display = 'block';
+                    lightboxImage.src = this.src;
+                    lightboxCaption.textContent = this.alt;
+                    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                });
+            });
+            
+            // Close lightbox functions
+            function closeLightbox() {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }
+            
+            // Close on X button click
+            closeBtn.addEventListener('click', closeLightbox);
+            
+            // Close on background click
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+            
+            // Close on Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && lightbox.style.display === 'block') {
+                    closeLightbox();
+                }
+            });
+        }
+
+// Initialize lightbox when page loads
+window.addEventListener('load', initLightbox);
+        // Trigger counter animations when impact summary comes into view
+        const impactObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const impactNumbers = entry.target.querySelectorAll('.impact-number');
+                    impactNumbers.forEach(num => {
+                        const text = num.textContent;
+                        const target = parseInt(text.replace('+', ''));
+                        if (target) {
+                            animateCounter(num, target);
+                        }
+                    });
+                    impactObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const impactSummary = document.querySelector('.impact-summary');
+        if (impactSummary) {
+            impactObserver.observe(impactSummary);
+        }
+
+        // Spotlight achievements animation
+        window.addEventListener('load', () => {
+            const achievements = document.querySelectorAll('.spotlight-achievement');
+            achievements.forEach((achievement, index) => {
+                achievement.style.animationDelay = `${index * 0.2}s`;
+                achievement.style.opacity = '0';
+                achievement.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    achievement.style.transition = 'all 0.6s ease';
+                    achievement.style.opacity = '1';
+                    achievement.style.transform = 'translateY(0)';
+                }, 1500 + (index * 200));
+            });
+        });
+
+        // Value cards stagger animation
+        const valueCards = document.querySelectorAll('.value-card');
+        
+        const valueObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'all 0.6s ease';
+                    }, index * 100);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        valueCards.forEach(card => {
+            valueObserver.observe(card);
+        });
+    </script>
+</body>
+</html>
